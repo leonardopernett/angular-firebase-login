@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-md-6 mx-auto mt-5">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title text-center">
+                    Account Login 
+                </div>
+                <form [formGroup]="loginForm" (submit)="onLogin()">
+                    <div class="form-group">
+                        <input type="text" formControlName="email" placeholder="email" class="form-control"> 
+                    </div>
+                    <div class="form-group">
+                        <input type="password" formControlName="password" placeholder="password" class="form-control"> 
+                    </div>
+                    <button type="submit" class="btn btn-primary">login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
